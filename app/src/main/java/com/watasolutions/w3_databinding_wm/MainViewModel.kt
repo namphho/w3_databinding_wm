@@ -33,6 +33,9 @@ class MainViewModel : ViewModel() {
             _isErrorEvent.postValue("password không hợp lệ")
             return
         }
+        //call API login
+        //val isSuccess = DataRepo.login(email = email, pass = password)
+
         _isSuccessEvent.postValue(true)
     }
 

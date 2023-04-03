@@ -10,11 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.W3_databinding_wm">
         <activity
+            android:name=".OldMainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+        </activity>
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
